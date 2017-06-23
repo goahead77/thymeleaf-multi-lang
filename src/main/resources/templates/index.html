@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>当前语言：<span th:text="#{home.lang}"></span></li>
+    <li><a th:href="@{/index(lang=zh_CN)}">汉语</a></li>
+    <li><a th:href="@{/index(lang=en)}">English</a></li>
+</ul>
+
+<div class="other">
+    <p th:text="#{home.content}">会根据语言显示不同的版本</p>
+    <p th:text="${#locale.getLanguage()}">当前国家</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+#设置端口，如果不设置，默认在8080
+server:
+  port: 1111
+spring:
+  thymeleaf:
+    encoding: UTF-8
